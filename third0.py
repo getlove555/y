@@ -1178,7 +1178,7 @@ def bot(op):
                     nadya.sendText(msg.to,"Semua Spam Undangan Telah Di Tolak")
                 else:
                     nadya.sendText(msg.to,"ปฏิเสทคำเชิญเข้ากลุ่มทั้งหมดเรียบร้อย。")
-            elif msg.text in ["Y1 rgroups","ลบรันบอท"]:
+        elif msg.text in ["Y1 rgroups","ลบรันบอท"]:
                 gid = ki.getGroupIdsInvited()
                 for i in gid:
                     ki.rejectGroupInvitation(i)
@@ -1337,24 +1337,24 @@ def bot(op):
 #if op.type == 25:
            # msg = op.message
             #try:
-                if ".say " in msg.text.lower():
-                    spl = re.split(".say ",msg.text,flags=re.IGNORECASE)
-                    if spl[0] == "":
-                        mts = spl[1]
-                        mtsl = mts.split()
-                        mtsTimeArg = len(mtsl) - 1
-                        mtsTime = mtsl[mtsTimeArg]
-                        del mtsl[mtsTimeArg]
-                        mtosay = " ".join(mtsl)
-                        global Rapid1To
-                        Rapid1To = msg.to
-                        RapidTime = mtsTime
-                        rmtosay = []
-                        for count in range(0,int(RapidTime)):
-                            rmtosay.insert(count,mtosay)
-                        p = Pool(20)
-                        p.map(Rapid1Say,rmtosay)
-                        p.close()
+               # if ".say " in msg.text.lower():
+                  #  spl = re.split(".say ",msg.text,flags=re.IGNORECASE)
+                #    if spl[0] == "":
+                #        mts = spl[1]
+                #        mtsl = mts.split()
+               #         mtsTimeArg = len(mtsl) - 1
+            #            mtsTime = mtsl[mtsTimeArg]
+          #              del mtsl[mtsTimeArg]
+              #          mtosay = " ".join(mtsl)
+          #              global Rapid1To
+           #             Rapid1To = msg.to
+             #           RapidTime = mtsTime
+             #           rmtosay = []
+                #        for count in range(0,int(RapidTime)):
+              #              rmtosay.insert(count,mtosay)
+                #        p = Pool(20)
+                   #     p.map(Rapid1Say,rmtosay)
+                   #     p.close()
  
             elif "Join group: " in msg.text:
 		ng = msg.text.replace("Join group: ","")
