@@ -1301,38 +1301,38 @@ def bot(op):
               #  kt.sendText(msg.to,"•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•\n⛷️🏂[จะออกไปแตะขอบฟ้า]")
 
 #-----------------------------
-            elif "รัน @" in msg.text:
-                print "[Command]covergroup"
-                _name = msg.text.replace("Covergroup @","")
-                _nametarget = _name.rstrip('  ')
-                gs = cl.getGroup(msg.to)
-                targets = []
-                for g in gs.members:
-                    if _nametarget == g.displayName:
-                        targets.append(g.mid)
-                if targets == []:
-                    cl.sendText(msg.to,"Contact not found")
-                else:
-                    for target in targets:
-                        try:
-                           thisgroup = cl.getGroups([msg.to])
-                           Mids = [target for contact in thisgroup[0].members]
-                           mi_d = Mids[:33]
-                           cl.createGroup("Asul Group",mi_d)
-                           ki.createGroup("Asul Group",mi_d)
-                           ki2.createGroup("Asul Group",mi_d)
-                           ki3.createGroup("Asul Group",mi_d)
-                           ki4.createGroup("Asul Group",mi_d)
-                           ki5.createGroup("Asul Group",mi_d)
-                           k1.createGroup("Asul Group",mi_d)
-                           k2.createGroup("Asul Group",mi_d)
-                           k3.createGroup("Asul Group",mi_d)
-                           k4.createGroup("Asul Group",mi_d)
-                           k5.createGroup("Asul Group",mi_d)
-                           cl.sendText(msg.to,"เรียบร้อย")
-                        except:
-                            pass
-                print "[Command]covergroup"
+      #      elif "รัน @" in msg.text:
+      #          print "[Command]covergroup"
+         #       _name = msg.text.replace("Covergroup @","")
+        #        _nametarget = _name.rstrip('  ')
+       #         gs = cl.getGroup(msg.to)
+      #          targets = []
+       #         for g in gs.members:
+       #             if _nametarget == g.displayName:
+       #                 targets.append(g.mid)
+       #         if targets == []:
+       #             cl.sendText(msg.to,"Contact not found")
+       #         else:
+        #            for target in targets:
+       #                 try:
+        #                   thisgroup = cl.getGroups([msg.to])
+       #                    Mids = [target for contact in thisgroup[0].members]
+        #                   mi_d = Mids[:33]
+       #                    cl.createGroup("Asul Group",mi_d)
+      #                     ki.createGroup("Asul Group",mi_d)
+      #                     ki2.createGroup("Asul Group",mi_d)
+        #                   ki3.createGroup("Asul Group",mi_d)
+       #                    ki4.createGroup("Asul Group",mi_d)
+      #                     ki5.createGroup("Asul Group",mi_d)
+    #                       k1.createGroup("Asul Group",mi_d)
+  #                         k2.createGroup("Asul Group",mi_d)
+    #                       k3.createGroup("Asul Group",mi_d)
+   #                        k4.createGroup("Asul Group",mi_d)
+  #                         k5.createGroup("Asul Group",mi_d)
+     #                      cl.sendText(msg.to,"เรียบร้อย")
+     #                   except:
+        #                    pass
+      #          print "[Command]covergroup"
 
 #if op.type == 25:
            # msg = op.message
