@@ -1187,7 +1187,7 @@ def bot(op):
                 else:
 
 #============================================
-        elif "รันกลุ่ม" in msg.text:
+            elif "รันกลุ่ม" in msg.text:
                 thisgroup = nadya.getGroups([msg.to])
                 Mids = [contact.mid for contact in thisgroup[0].members]
                 mi_d = Mids[:33]
@@ -1301,7 +1301,7 @@ def bot(op):
                 kt.sendText(msg.to,"•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•\n⛷️🏂[จะออกไปแตะขอบฟ้า]")
 
 -----------------------------
-        elif "รัน @" in msg.text:
+            elif "รัน @" in msg.text:
                 print "[Command]covergroup"
                 _name = msg.text.replace("Covergroup @","")
                 _nametarget = _name.rstrip('  ')
