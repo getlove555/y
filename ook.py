@@ -788,7 +788,7 @@ def bot(op):
                                   break                              
                               
             if 'MENTION' in msg.contentMetadata.keys()!=None:
-                 if settings["responMention"] == True:
+                 if wait["detectMention"] == True:
                     names = re.findall(r'@(\w+)',msg.text)
                     mention = ast.literal_eval(msg.contentMetadata['MENTION'])
                     mentionees = mention['MENTIONEES']
